@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 # Connect to SQL database
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/learningflask'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///learningflask'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:password@localhost:5432/learningflask
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///learningflask'
 db.init_app(app)
 
 # Protects against CSRF
